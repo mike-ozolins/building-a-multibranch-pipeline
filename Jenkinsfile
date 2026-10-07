@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label '192.168.1.222'
+    }
     environment {
         CI = 'true'
     }
